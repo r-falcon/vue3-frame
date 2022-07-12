@@ -1,11 +1,11 @@
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 // ui组件按需加载；api组件库按需加载
-import Components from 'unplugin-vue-components/vite';
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
-import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import AutoImport from 'unplugin-auto-import/vite'
 // 配置依赖路径
-const path = require('path');
+const path = require('path')
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -13,11 +13,11 @@ export default defineConfig({
     vue(),
     // 自动按需导入
     Components({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [ElementPlusResolver()]
     }),
     AutoImport({
-      imports: ['vue', 'vue-router', 'pinia'],
-    }),
+      imports: ['vue', 'vue-router', 'pinia']
+    })
   ],
   server: {
     // 项目启动时，在浏览器自动打开
@@ -31,16 +31,16 @@ export default defineConfig({
     alias: [
       {
         find: '@',
-        replacement: path.resolve(__dirname, 'src'),
+        replacement: path.resolve(__dirname, 'src')
       },
       {
         find: 'components',
-        replacement: path.resolve(__dirname, 'src/components'),
+        replacement: path.resolve(__dirname, 'src/components')
       },
       {
         find: 'vites',
-        replacement: path.resolve(__dirname, 'src/view'),
-      },
-    ],
-  },
-});
+        replacement: path.resolve(__dirname, 'src/views')
+      }
+    ]
+  }
+})

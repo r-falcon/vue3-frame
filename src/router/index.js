@@ -1,20 +1,25 @@
-import * as vueRouter from 'vue-router';
+import * as vueRouter from 'vue-router'
 
 const routes = [
   {
     path: '/',
-    redirect: '/home',
+    redirect: '/home'
   },
   {
     path: '/home',
     name: 'Home',
-    component: () => import('@/components/Home.vue'),
+    component: () => import('vites/Home.vue')
   },
-];
+  {
+    path: '/variable',
+    name: 'Variable',
+    component: () => import('vites/variable')
+  }
+]
 
 const router = vueRouter.createRouter({
   history: vueRouter.createWebHashHistory(),
-  routes: routes,
-});
+  routes: routes
+})
 
-export default router;
+export default router
