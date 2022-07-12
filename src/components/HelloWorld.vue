@@ -2,6 +2,7 @@
   <div class="text">
     <p>love and peace</p>
     hello components
+    <p>随便改改的提交</p>
     <p>love and peace</p>
   </div>
 </template>
