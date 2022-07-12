@@ -27,5 +27,8 @@
     "vite-plugin-components": "^0.13.3",
     "vite-plugin-style-import": "^2.0.0",
     "vue-router": "^4.1.2"
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": ["prettier --write", "esslint --cache --fix", "git add"]
   }
 }

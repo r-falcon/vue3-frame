@@ -2,6 +2,7 @@
   <div class="text">
     <p>love and peace</p>
     hello components
+    <p>love and peace</p>
   </div>
 </template>
 
