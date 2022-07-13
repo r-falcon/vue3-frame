@@ -2,6 +2,7 @@
   <div class="nav_box">
     <router-link to="/">Home</router-link>
     <router-link to="/variable">Variable</router-link>
+    <router-link to="/lifecircle">LifeCircle</router-link>
   </div>
 </template>
 

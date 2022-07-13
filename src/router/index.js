@@ -14,6 +14,11 @@ const routes = [
     path: '/variable',
     name: 'Variable',
     component: () => import('vites/variable')
+  },
+  {
+    path: '/lifecircle',
+    name: 'LifeCircle',
+    component: () => import('vites/lifecircle')
   }
 ]
 
