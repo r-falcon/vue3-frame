@@ -20,7 +20,7 @@ import Nav from './Nav.vue'
 
   .right_box {
     flex: 1;
-    padding: 10px auto;
+    padding: 10px;
   }
 }
 </style>
