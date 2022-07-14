@@ -4,6 +4,7 @@
     <router-link to="/variable">Variable</router-link>
     <router-link to="/lifecircle">LifeCircle</router-link>
     <router-link to="/watch">Watch</router-link>
+    <router-link to="/computed">Computed</router-link>
   </div>
 </template>
 

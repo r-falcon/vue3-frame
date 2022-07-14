@@ -24,6 +24,11 @@ const routes = [
     path: '/watch',
     name: 'Watch',
     component: () => import('vites/watch')
+  },
+  {
+    path: '/computed',
+    name: 'Computed',
+    component: () => import('vites/computed')
   }
 ]
 
