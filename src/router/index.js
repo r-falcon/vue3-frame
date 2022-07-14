@@ -39,6 +39,11 @@ const routes = [
     path: '/fragment',
     name: 'Fragment',
     component: () => import('vites/fragment')
+  },
+  {
+    path: '/teleport',
+    name: 'Teleport',
+    component: () => import('vites/teleport')
   }
 ]
 
