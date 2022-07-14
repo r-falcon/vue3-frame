@@ -29,6 +29,11 @@ const routes = [
     path: '/computed',
     name: 'Computed',
     component: () => import('vites/computed')
+  },
+  {
+    path: '/setup',
+    name: 'Setup',
+    component: () => import('vites/setup')
   }
 ]
 
