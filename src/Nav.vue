@@ -8,6 +8,7 @@
     <router-link to="/setup">Setup</router-link>
     <router-link to="/fragment">Fragment</router-link>
     <router-link to="/teleport">Teleport</router-link>
+    <router-link to="/suspense">Suspense</router-link>
   </div>
 </template>
 

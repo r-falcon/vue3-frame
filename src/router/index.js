@@ -44,6 +44,11 @@ const routes = [
     path: '/teleport',
     name: 'Teleport',
     component: () => import('vites/teleport')
+  },
+  {
+    path: '/suspense',
+    name: 'Suspense',
+    component: () => import('vites/suspense')
   }
 ]
 
