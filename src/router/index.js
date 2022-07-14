@@ -34,6 +34,11 @@ const routes = [
     path: '/setup',
     name: 'Setup',
     component: () => import('vites/setup')
+  },
+  {
+    path: '/fragment',
+    name: 'Fragment',
+    component: () => import('vites/fragment')
   }
 ]
 

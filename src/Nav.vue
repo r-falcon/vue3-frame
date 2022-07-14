@@ -6,6 +6,7 @@
     <router-link to="/watch">Watch</router-link>
     <router-link to="/computed">Computed</router-link>
     <router-link to="/setup">Setup</router-link>
+    <router-link to="/fragment">Fragment</router-link>
   </div>
 </template>
 
