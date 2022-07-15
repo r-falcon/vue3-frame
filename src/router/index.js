@@ -64,6 +64,11 @@ const routes = [
     path: '/slot',
     name: 'SlotPanel',
     component: () => import('vites/slot')
+  },
+  {
+    path: '/directive',
+    name: 'Directive',
+    component: () => import('vites/directive')
   }
 ]
 
