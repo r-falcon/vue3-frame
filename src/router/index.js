@@ -54,6 +54,11 @@ const routes = [
     path: '/defineHooks',
     name: 'DefineHooks',
     component: () => import('vites/defineHooks')
+  },
+  {
+    path: '/async',
+    name: 'AsyncPanel',
+    component: () => import('vites/async')
   }
 ]
 

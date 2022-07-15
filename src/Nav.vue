@@ -10,6 +10,7 @@
     <router-link to="/teleport">Teleport</router-link>
     <router-link to="/suspense">Suspense</router-link>
     <router-link to="/defineHooks">DefineHooks</router-link>
+    <router-link to="/async">AsyncComPonent</router-link>
   </div>
 </template>
 
