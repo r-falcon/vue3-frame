@@ -9,6 +9,7 @@
     <router-link to="/fragment">Fragment</router-link>
     <router-link to="/teleport">Teleport</router-link>
     <router-link to="/suspense">Suspense</router-link>
+    <router-link to="/defineHooks">DefineHooks</router-link>
   </div>
 </template>
 

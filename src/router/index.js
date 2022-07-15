@@ -49,6 +49,11 @@ const routes = [
     path: '/suspense',
     name: 'Suspense',
     component: () => import('vites/suspense')
+  },
+  {
+    path: '/defineHooks',
+    name: 'DefineHooks',
+    component: () => import('vites/defineHooks')
   }
 ]
 
