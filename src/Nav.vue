@@ -11,6 +11,7 @@
     <router-link to="/suspense">Suspense</router-link>
     <router-link to="/defineHooks">DefineHooks</router-link>
     <router-link to="/async">AsyncComPonent</router-link>
+    <router-link to="/slot">Slots</router-link>
   </div>
 </template>
 

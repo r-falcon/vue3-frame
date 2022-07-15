@@ -59,6 +59,11 @@ const routes = [
     path: '/async',
     name: 'AsyncPanel',
     component: () => import('vites/async')
+  },
+  {
+    path: '/slot',
+    name: 'SlotPanel',
+    component: () => import('vites/slot')
   }
 ]
 
