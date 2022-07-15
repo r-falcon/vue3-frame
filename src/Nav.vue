@@ -14,6 +14,7 @@
     <router-link to="/slot">Slots</router-link>
     <router-link to="/directive">Directive</router-link>
     <router-link to="/vmodel">Vmodel</router-link>
+    <router-link to="/vforvif">v-for和v-if同时使用</router-link>
   </div>
 </template>
 

@@ -74,6 +74,11 @@ const routes = [
     path: '/vmodel',
     name: 'Vmodel',
     component: () => import('vites/vmodel')
+  },
+  {
+    path: '/vforvif',
+    name: 'VforVif',
+    component: () => import('vites/vforvif')
   }
 ]
 
