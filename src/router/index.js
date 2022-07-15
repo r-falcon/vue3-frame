@@ -69,6 +69,11 @@ const routes = [
     path: '/directive',
     name: 'Directive',
     component: () => import('vites/directive')
+  },
+  {
+    path: '/vmodel',
+    name: 'Vmodel',
+    component: () => import('vites/vmodel')
   }
 ]
 

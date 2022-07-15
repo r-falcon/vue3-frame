@@ -13,6 +13,7 @@
     <router-link to="/async">AsyncComPonent</router-link>
     <router-link to="/slot">Slots</router-link>
     <router-link to="/directive">Directive</router-link>
+    <router-link to="/vmodel">Vmodel</router-link>
   </div>
 </template>
 
