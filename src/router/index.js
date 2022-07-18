@@ -79,6 +79,11 @@ const routes = [
     path: '/vforvif',
     name: 'VforVif',
     component: () => import('vites/vforvif')
+  },
+  {
+    path: '/vbind',
+    name: 'Vbind',
+    component: () => import('vites/vbind')
   }
 ]
 
