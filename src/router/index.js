@@ -115,6 +115,11 @@ const routes = [
     path: '/dynamic/:id',
     name: 'Dynamic',
     component: () => import('vites/arouter/Dynamic.vue')
+  },
+  {
+    path: '/vueuse',
+    name: 'Vueuse',
+    component: () => import('vites/vueuse')
   }
 ]
 

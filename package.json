@@ -10,6 +10,7 @@
     "lint": "lint-staged"
   },
   "dependencies": {
+    "@vueuse/core": "^8.9.4",
     "element-plus": "^2.2.9",
     "mitt": "^3.0.0",
     "pinia": "^2.0.16",

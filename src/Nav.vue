@@ -25,6 +25,7 @@
     <router-link to="/vbind">v-bind优先级</router-link>
     <router-link to="/communication">组件间通信</router-link>
     <router-link to="/router">路由的使用</router-link>
+    <router-link to="/vueuse">VueUse工具库</router-link>
   </div>
 </template>
 
