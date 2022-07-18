@@ -84,6 +84,11 @@ const routes = [
     path: '/vbind',
     name: 'Vbind',
     component: () => import('vites/vbind')
+  },
+  {
+    path: '/communication',
+    name: 'Communication',
+    component: () => import('vites/communication')
   }
 ]
 

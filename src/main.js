@@ -5,6 +5,8 @@ import App from './App.vue'
 // import 'element-plus/theme-chalk/index.css';
 // 路由
 import router from './router'
+// 状态库
+import store from './store'
 
 const app = createApp(App)
 
@@ -17,4 +19,5 @@ const app = createApp(App)
 
 // app.use(ElementPlus);
 app.use(router)
+app.use(store)
 app.mount('#app')

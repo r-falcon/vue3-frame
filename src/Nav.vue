@@ -16,6 +16,7 @@
     <router-link to="/vmodel">Vmodel</router-link>
     <router-link to="/vforvif">v-for和v-if同时使用</router-link>
     <router-link to="/vbind">v-bind优先级</router-link>
+    <router-link to="/communication">组件间通信</router-link>
   </div>
 </template>
 

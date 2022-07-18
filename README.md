@@ -291,3 +291,105 @@ module.exports = {
 ```
 
 - git 提交进行校验配置完成
+
+## 通信，mitt
+
+- 安装`npm install mitt -S`
+- bus.js
+
+```js
+import mitt from 'mitt'
+export default mitt()
+```
+
+- brother1.vue
+
+```vue
+<template>
+  <p>brother1 发送事件</p>
+  <el-button @click="handleClick">发送事件</el-button>
+</template>
+
+<script setup>
+import mybus from './bus.js'
+const handleClick = () => {
+  mybus.emit('title', { title: 'hello world' })
+  mybus.emit('user', { user: { name: 'falcon', age: 20 } })
+}
+</script>
+```
+
+- brother2.vue
+
+```vue
+<template>
+  <p>brother2 接受事件</p>
+  <p>title is : {{ title }}</p>
+  <p>user is , name:{{ name }}, age:{{ age }}</p>
+</template>
+
+<script setup>
+import mybus from './bus.js'
+import { ref, reactive, toRefs } from 'vue'
+
+const title = ref('')
+const user = reactive({
+  name: '',
+  age: null
+})
+mybus.on('title', data => (title.value = data.title))
+mybus.on('user', data => {
+  user.name = data.user.name
+  user.age = data.user.age
+})
+// 移除
+// mybus.off("title");
+// mybus.off("user");
+// mybus.all.clear();
+const { name, age } = toRefs(user)
+</script>
+```
+
+## 状态管理，pinia
+
+- `npm install pinia --save`
+- src/store/index.js
+
+```js
+import { createPinia } from 'pinia'
+const store = createPinia()
+export default store
+```
+
+- main.js 中引入
+
+```js
+import router from './router'
+app.use(store)
+```
+
+- store 测试，store/userInfo.js
+
+```js
+import { defineStore } from 'pinia'
+
+export const userStore = defineStore({
+  id: 'userInfo', //命名，唯一，必须
+  state: () => {
+    return {
+      userInfo: {}
+    }
+  },
+  actions: {
+    setUserInfo(data) {
+      this.userInfo = data
+    }
+  }
+})
+```
+
+- 页面中使用
+
+```vue
+
+```
