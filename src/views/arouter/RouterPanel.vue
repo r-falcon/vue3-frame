@@ -49,5 +49,9 @@ const TransByDynamic = () => {
     name: 'Dynamic',
     params: { id: id.value }
   })
+  // 路由跳转
+  // router.go(1); //前进
+  // router.go(-1); //后退
+  // router.go(0); //刷新
 }
 </script>
