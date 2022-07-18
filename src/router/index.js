@@ -10,6 +10,12 @@ const routes = [
     name: 'Home',
     component: () => import('vites/Home.vue')
   },
+  // 错误路由导航404
+  {
+    path: '/:path(.*)',
+    name: '404',
+    component: () => import('vites/404.vue')
+  },
   {
     path: '/variable',
     name: 'Variable',
@@ -89,6 +95,26 @@ const routes = [
     path: '/communication',
     name: 'Communication',
     component: () => import('vites/communication')
+  },
+  {
+    path: '/router',
+    name: 'Router',
+    component: () => import('vites/arouter')
+  },
+  {
+    path: '/queryDemo',
+    name: 'QueryDemo',
+    component: () => import('vites/arouter/queryDemo.vue')
+  },
+  {
+    path: '/paramsDemo',
+    name: 'ParamsDemo',
+    component: () => import('vites/arouter/paramsDemo.vue')
+  },
+  {
+    path: '/dynamic/:id',
+    name: 'Dynamic',
+    component: () => import('vites/arouter/Dynamic.vue')
   }
 ]
 
