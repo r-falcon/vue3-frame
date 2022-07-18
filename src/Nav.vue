@@ -1,5 +1,12 @@
 <template>
   <div class="nav_box">
+    <!-- 
+    router-router-link的配置：
+      to：是一个字符串，或一个对象
+      replace：点击调用router.replace()而不是router.push()
+      active-class：激活后class
+      exact-active-class：精准激活后class
+    -->
     <router-link to="/">Home</router-link>
     <router-link to="/variable">Variable</router-link>
     <router-link to="/lifecircle">LifeCircle</router-link>
