@@ -17,6 +17,8 @@ module.exports = {
     // 组件中没有根元素时报错
     'vue/no-multiple-template-root': 'off',
     // 'v-model' directives require no argument.
-    'vue/no-v-model-argument': 'off'
+    'vue/no-v-model-argument': 'off',
+    // Parsing error: Unexpected token
+    parser: 'vue-eslint-parser'
   }
 }
