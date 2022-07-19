@@ -120,6 +120,11 @@ const routes = [
     path: '/vueuse',
     name: 'Vueuse',
     component: () => import('vites/vueuse')
+  },
+  {
+    path: '/request',
+    name: 'Request',
+    component: () => import('vites/request')
   }
 ]
 

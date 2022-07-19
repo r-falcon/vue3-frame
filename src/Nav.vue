@@ -26,6 +26,7 @@
     <router-link to="/communication">组件间通信</router-link>
     <router-link to="/router">路由的使用</router-link>
     <router-link to="/vueuse">VueUse工具库</router-link>
+    <router-link to="/request">axios封装接口请求案例</router-link>
   </div>
 </template>
 

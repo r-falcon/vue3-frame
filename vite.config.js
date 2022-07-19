@@ -19,13 +19,6 @@ export default defineConfig({
       imports: ['vue', 'vue-router', 'pinia']
     })
   ],
-  server: {
-    // 项目启动时，在浏览器自动打开
-    // open: true,
-    // host: '0.0.0.0',
-    // port: 3000,
-    // https: false, // 是否开启https
-  },
   // 配置路径名
   resolve: {
     alias: [
@@ -42,5 +35,22 @@ export default defineConfig({
         replacement: path.resolve(__dirname, 'src/views')
       }
     ]
+  },
+  // 本地运行配置，反向代理配置
+  server: {
+    // 项目启动时，在浏览器自动打开
+    // open: true,
+    // host: '0.0.0.0',
+    // port: 3000,
+    // https: false, // 是否开启https
+    cors: true,
+    open: true,
+    proxy: {
+      '/api': {
+        target: 'http://127.0.0.1:8888/api/', //要跨域访问的地址
+        changeOrigin: true, //允许跨域
+        rewrite: path => path.replace(/^\/api/, '')
+      }
+    }
   }
 })
