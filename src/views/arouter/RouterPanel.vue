@@ -14,7 +14,7 @@ import { useRouter } from 'vue-router'
  *    query传参配置path，params传参配置name，且params中配置path无效
  *    query传参显示在地址栏，params传参不会
  *    query传参刷新页面数据不会消息，params传参刷新页面消失
- *    params可以使用动态参数，动态参数会显示在地址栏中，且刷新页面数据不会消失
+ *    params可以使用动态参数("/path/:params")，动态参数会显示在地址栏中，且刷新页面数据不会消失
  */
 
 const queryParams = reactive({
